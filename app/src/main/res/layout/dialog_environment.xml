@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_gary_bg_5dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="请选择服务器地址"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_release"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="正式：api.xfanza.com"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_release_channel_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="正式：api.nicoacg1.com"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_debug"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="测试：192.168.1.80:8899"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_dev3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="测试：192.168.1.164:8899"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:text="确 定"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

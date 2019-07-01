@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/RadioButton1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@color/red"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="通讯录"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="我"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+        <com.zjb.frameworkutil.views.NoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_bottom"
+            android:background="@color/black" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
